@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Item: Identifiable {
-    let id = UUID()
+struct Item: Identifiable, Codable {
+    private(set) var id = UUID()
     var todo: String
 }
